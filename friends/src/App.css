@@ -26,12 +26,22 @@ h1
     margin-top: 2%;
 }
 
-input
+.friend-form input
 {
     margin-left: 2%;
 }
 
-button
+.friend-form button
 {
     margin-left: 2%;
+}
+
+.login-form
+{
+    text-align: center;
+}
+
+.login-form input
+{
+    margin-bottom: 2%;
 }

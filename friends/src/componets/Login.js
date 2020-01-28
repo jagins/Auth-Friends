@@ -27,17 +27,22 @@ function Login(props)
     }
     return (
         <div className='login-form'>
-            <form onSubmit={login}>
-                <input 
+            <h1>Login</h1>
+            <form className='login-form' onSubmit={login}>
+                <input
                     type='text'
                     name='username'
                     value={credentials.username}
-                    onChange={handleChange}/>
+                    onChange={handleChange}
+                    placeholder='username'/>
+                    <br></br>
                 <input
                     type='password'
                     name='password'
                     value={credentials.password}
-                    onChange={handleChange}/>
+                    onChange={handleChange}
+                    placeholder='password'/>
+                    <br></br>
                 <button>Log in</button>
             </form>
         </div>
