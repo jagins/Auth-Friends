@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 
-function Login()
+function Login(props)
 {
     const [credentials, setCredentials] = useState({username: '', password: ''});
+
+    const {history} = props;
 
     const handleChange = e =>
     {
@@ -15,6 +17,13 @@ function Login()
     const login = e =>
     {
         e.preventDefault();
+        axios.post('http://localhost:5000/api/login', credentials)
+        .then(response =>
+        {
+            localStorage.setItem('token', response.data.payload);
+            history.push('/friends-list');
+        })
+        .catch(error => console.log(error));
     }
     return (
         <div className='login-form'>
