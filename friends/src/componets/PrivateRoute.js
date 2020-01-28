@@ -9,3 +9,5 @@ function PrivateRoute()
         </Route>
     );   
 }
+
+export default PrivateRoute;

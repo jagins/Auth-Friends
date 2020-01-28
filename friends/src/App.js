@@ -10,7 +10,11 @@ function App()
 {
   return (
     <div className="App">
-      
+      <Switch>
+        <PrivateRoute path='/friends-list' component={FriendsList}/>
+        <Route path='/login' component={Login}/>
+        <Route component={Login}/>
+      </Switch>
     </div>
   );
 }
