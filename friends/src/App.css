@@ -1,0 +1,47 @@
+h1
+{
+    text-align: center;
+}
+
+.friends-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.friend
+{
+    border: 1px solid gray;
+    width: 25%;
+    margin: 2%;
+    text-align: center;
+}
+
+.friend-form
+{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.friend-form input
+{
+    margin-left: 2%;
+}
+
+.friend-form button
+{
+    margin-left: 2%;
+}
+
+.login-form
+{
+    text-align: center;
+}
+
+.login-form input
+{
+    margin-bottom: 2%;
+}
