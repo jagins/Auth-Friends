@@ -4,7 +4,7 @@ import {Route, Redirect} from 'react-router-dom';
 function PrivateRoute({component: Component, ...rest})
 {
     return (
-        <Route>
+        <Route
             {...rest}
             render={() =>
             {
@@ -13,7 +13,7 @@ function PrivateRoute({component: Component, ...rest})
                 else
                     return <Redirect to='/login'/>
             }}
-        </Route>
+        />
     );   
 }
 
